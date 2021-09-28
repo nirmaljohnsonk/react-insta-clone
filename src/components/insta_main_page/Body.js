@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import Status from "./Status";
 import Posts from './Posts';
-import Sidebody from './SideBody';
 import firebase from '../Firebase';
 import LoadingData from "./LoadingData";
 
@@ -18,7 +16,8 @@ function Body() {
         <div className="body">
             <div className="body-content">
                 <div className="main-body">
-                    <Status />
+                    <div className="status">
+                    </div>
                     {Loading && <LoadingData />}
                     {
                         posts && posts.map(post => {
@@ -27,7 +26,26 @@ function Body() {
                     }
                 </div>
                 <div className="side-body">
-                    <Sidebody />
+                    <div className="side-body-comp">
+                        <div className="heading">
+                            <h3>Suggestions For You</h3>
+                            <h6>See All</h6>
+                        </div>
+                        <div className="suggestions">
+                            <div className="user">
+                                <div className="side-avathar"></div>
+                                <h6>nirmal_johnson_k</h6>
+                            </div>
+                            <h4>Follow</h4>
+                        </div>
+                        <div className="suggestions">
+                            <div className="user">
+                                <div className="side-avathar"></div>
+                                <h6>nirmal_johnson_k</h6>
+                            </div>
+                            <h4>Follow</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
