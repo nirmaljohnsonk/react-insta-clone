@@ -33,6 +33,9 @@ function Posts({ post }) {
                     <i className="far fa-bookmark"></i>
                 </div>
             </div>
+            <div className="caption">
+                <p><b>{post.username}</b> {post.caption} </p>
+            </div>
             <div className="comment">
             </div>
             <div className="add-comment">
