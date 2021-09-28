@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@0,100;0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -63,11 +63,11 @@
     padding: 30px 0px;
 }    
 .main-body{
-    width: 64%;
+    width: 100;
     min-height: 86vh;
 }
 .side-body{
-    width: 35%;
+    min-width: 35%;
     height: 200px;
     position: sticky;
     top: 5.4rem;
@@ -107,7 +107,7 @@
     border: 1px solid #23e976;
 }
 .username h5{
-    font-family: 'Jost', sans-serif;
+    font-family: 'Sintony', sans-serif;
     font-size: 14px;
     font-weight: bolder;
     float: right;
@@ -206,7 +206,7 @@
   }
   .suggestions h4{
     font-size: 14px;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Sintony', sans-serif;
     color: #1fd2df;
   }
   .fa-heart-clicked{
@@ -255,7 +255,7 @@
     margin-right: 4rem;
 }
 .user__details{
-    font-family: 'Jost', sans-serif;
+    font-family: 'Sintony', sans-serif;
     width: 70%;
     height: 12rem;
     display: inline-block;
@@ -296,19 +296,43 @@
     border-radius: 1rem;
     border: 1px solid rgb(180, 180, 180);
 }
-.fileUpload input[type=file]{
-    display:none;
+.upload h1{
+    font-family: 'Sintony', sans-serif;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    text-justify: auto;
 }
-.btn{
-    background-color:#e3e3e3;
-    color:#333;
-    border:1px solid #e6e6e6;
-    border-radius:3px;
-    padding:6px 12px;
-    font-size:16px;
+.upload progress{
+    width: 90%;
+}
+.upload button{
+    padding: .8rem;
+    margin-top:1rem;
+    font-size:1.5rem ;
+    border: none;
+}
+.upload input[type="text"]{
+    width: 80%;
+    height: 2rem;
+    padding: .8rem;
+    margin-top: 1rem;
 }
 .caption {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Sintony', sans-serif;
     padding: 0 10px;
     color: rgb(56, 56, 56);
+}
+
+@media screen and (max-width:980px) {
+    .side-body{
+        display:none;
+    }
+    .content input[type="text"]{
+        margin-left:0px;
+    }
+}
+@media screen and (max-width:650px) {
+    .body-content,.main-body{
+        width: 100%;
+    }
 }

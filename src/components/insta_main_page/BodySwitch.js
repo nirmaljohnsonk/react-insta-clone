@@ -35,7 +35,6 @@ function Bodyswitch() {
                         <i className={style} onClick={handleStyle}></i>
                         <img src={avathar} alt="" className="avathar-nav" onClick={() => history.push("/user")} />
                     </div>
-
                 </div>
             </div>
             <Switch>
